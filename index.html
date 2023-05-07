@@ -3,82 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 홈페이지</title>
-    <style>
-        body {
-            font-family: "맑은 고딕", sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            padding: 1em;
-            text-align: center;
-        }
-
-        h1 {
-            color: white;
-            margin: 0;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 1em auto;
-            background-color: white;
-            padding: 2em;
-        }
-
-        h2 {
-            border-bottom: 1px solid #f0f0f0;
-            padding-bottom: 1em;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 1em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Jisung's Intro</title>
 </head>
 <body>
-    <header>
-        <h1>박지성의 홈페이지</h1>
-    </header>
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about-me')">About me</button>
+        <button onclick="showSection('hobby')">Hobby</button>
+        <button onclick="showSection('like')">Like</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
 
-    <main>
-        <section>
-            <h2>자기소개</h2>
-            <img src="images/JS1.jpg" width="200px;" height="380px;" alt="">
-            <p>안녕하세요! 저는 박지성입니다. 저는 단국대학교 학생입니다. 이 홈페이지에서는 저에 대한 정보를 공유하려고 합니다.</p>
-        </section>
+    <section id="home">
+        <h1>Jisung's Intro</h1>
+        <p>안녕하세요 소프트웨어학과 박지성입니다!</p>
+        <img src="imgs/JS2.jpg" alt="" />
+    </section>
 
-        <section>
-            <h2>학력</h2>
-            <ul>
-                <li>고등학교: 상현고등학교 (2015 - 2017)</li>
-                <li>대학교: 단국대학교 소프트웨어학과 (2018 - )</li>
-            </ul>
-        </section>
+    <section id="about-me">
+        <h1>About-me</h1>
+        <img src="imgs/JS1.jpg" alt="" />
+        <div>
+            <p>이름: 박지성</p>
+            <p>학번: 32181867</p>
+            <p>학과: 소프트웨어</p>
+            <p>생년월일: 1999.08.17</p>
+            <p>MBTI: ISFP</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>기술 스택</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React, Vue.js</li>
-                <li>Node.js, Express.js</li>
-            </ul>
-        </section>
+    <section id="hobby">
+        <h1>Hobby</h1>
+        <figure>
+            <img src="imgs/Game.jpg" alt="보드게임 사진" />
+            <figcaption>친구들과 보드게임</figcaption>
+        </figure>
+        <figure>
+            <img src="imgs/Movie.jpg" alt="영화감상 사진" />
+            <figcaption>집에서 영화감상</figcaption>
+        </figure>
+        <figure>
+            <img src="imgs/Walk.jpg" alt="산책하기 사진" />
+            <figcaption>비오는 날 산책하기</figcaption>
+        </figure>
+    </section>
 
-        <section>
-            <h2>연락처</h2>
-            <p>Email: jisung0817@gmail.com</p>
-            <p>Phone: 010-4289-2213</p>
-        </section>
-    </main>
+    <section id="like">
+        <h1>Like</h1>
+        <figure>
+          <img src="imgs/cat.jpg" alt="고양이 사진" />
+          <figcaption>고양이</figcaption>
+        </figure>
+        <figure>
+          <img src="imgs/clothes.jpg" alt="옷 사진" />
+          <figcaption>옷</figcaption>
+        </figure>
+        <figure>
+            <iframe width="400" height="230" src="https://www.youtube.com/embed/BzYnNdJhZQw" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+          <figcaption>노래</figcaption>
+        </figure>
+        <figure>
+            <img src="imgs/Taro.jpg" alt="타로카드 사진" />
+            <figcaption>타로카드</figcaption>
+          </figure>
+      </section>
+
+      <section id="contact">
+        <h1>contact</h1>
+        <p><a href="mailto:jisung0817@gmail.com">Personal-Email</a></p>
+        <p><a href="mailto:32181867@Dankook.ac.kr">Business-email</a></p>
+        <p><a href="https://github.com/Jamateur">GitHub</a></p>
+    </section>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
